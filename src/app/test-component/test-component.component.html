@@ -1,0 +1,13 @@
+<p>{{task}}</p>
+<input #newItem>
+<button (click)="addNewItem(newItem.value)">Click Me</button>
+
+@for (item of list; track item) {
+<li #item>{{ item }}
+  <button (click)="removeItem(item)">Remove</button>
+</li>
+
+} @empty {
+<li>There are no items.</li>
+
+}

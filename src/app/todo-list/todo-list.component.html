@@ -1,0 +1,13 @@
+<div>
+  <h1>TodoList</h1>
+  <input (input)="onInputChange($event)" />
+  <button (click)="addTodo()">Add todo</button>
+</div>
+<ul>
+  <div *ngFor="let todo of todos" style="display: flex; flex-direction: row;">
+    <li style="list-style-type: none;">{{todo.title}}</li>
+    <button (click)="onDelete(todo.id)" style="margin-left: 5px;">Delete</button>
+  </div>
+</ul>
+<p>Total Todos: {{ getTodoCount() }}</p>
+<p>{{taskTitle}}</p>
