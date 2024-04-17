@@ -1,1 +1,4 @@
 <p *ngFor="let user of userList let i = index" [ngStyle]="{'background-color': i%2 === 1 ? 'red' : ' '}">{{user}}</p>
+
+<mat-list-item *ngFor="let user of userList let i = index"
+  [ngStyle]="{'background-color': i%2 === 1 ? 'red' : ' '}">{{user}}</mat-list-item>
