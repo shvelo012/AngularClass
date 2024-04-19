@@ -1,0 +1,8 @@
+.user{
+  color: black;
+  font-weight: bold;
+  display: flex;
+}
+.title{
+  color: red;
+}

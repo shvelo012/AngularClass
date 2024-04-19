@@ -4,13 +4,14 @@ import { CounterComponent } from "./counter/counter.component";
 import { DirectivePlaygroundComponent } from './directive-playground/directive-playground.component';
 import { CounerWithInputComponent } from "./couner-with-input/couner-with-input.component";
 import { UserListComponent } from './user-list/user-list.component';
+import { Item, TodoListComponent } from './todo-list/todo-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent]
+  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent]
 })
 export class AppComponent {
   title = 'myTestApp';
@@ -20,5 +21,25 @@ export class AppComponent {
   }
 
   users = ["Gio", "Dato", "Kote", "Koba", "Evklite", "George"];
+
+  todolist: Item[] = [
+    {
+      title: 'Learn something',
+      description: "learn angular again",
+      user: 'jango'
+
+    },
+    {
+      title: 'Learn java',
+      description: "learn angular again",
+      user: 'Luka'
+
+    },
+    {
+      title: 'Learn python',
+      description: "learn angular again",
+      user: 'Gio'
+    },
+  ];
 
 }
