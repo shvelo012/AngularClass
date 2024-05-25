@@ -5,13 +5,14 @@ import { DirectivePlaygroundComponent } from './directive-playground/directive-p
 import { CounerWithInputComponent } from "./couner-with-input/couner-with-input.component";
 import { UserListComponent } from './user-list/user-list.component';
 import { Item, TodoListComponent } from './todo-list/todo-list.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent]
+  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent, HeroesComponent]
 })
 export class AppComponent {
   title = 'myTestApp';

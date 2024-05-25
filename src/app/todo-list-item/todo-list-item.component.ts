@@ -10,4 +10,8 @@ import { Item } from '../todo-list/todo-list.component';
 })
 export class TodoListItemComponent {
   @Input({ required: true }) item!: Item;
+
+  onArchieveClick() {
+    console.log('Archieve clicked');
+  }
 }
