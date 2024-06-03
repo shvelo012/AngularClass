@@ -1,0 +1,7 @@
+<div class="post-container">
+  <div class="post-header">
+      <button class="delete-button" (click)="onRemovePost(post?.id || 0)">X</button>
+      <h2>{{ post?.title }}</h2>
+  </div>
+  <p class="post-content">{{ post?.content }}</p>
+</div>

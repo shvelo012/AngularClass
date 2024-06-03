@@ -6,13 +6,16 @@ import { CounerWithInputComponent } from "./couner-with-input/couner-with-input.
 import { UserListComponent } from './user-list/user-list.component';
 import { Item, TodoListComponent } from './todo-list/todo-list.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { PostComponent } from './post/post.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent, HeroesComponent]
+  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent, HeroesComponent, PostComponent, PostListComponent, AddPostComponent]
 })
 export class AppComponent {
   title = 'myTestApp';

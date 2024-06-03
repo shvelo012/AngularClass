@@ -1,0 +1,28 @@
+.post-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.post-header {
+  display: flex;
+  align-items: center;
+}
+.post-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+.post-content {
+  margin-top: 10px;
+  color: #666;
+}
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
