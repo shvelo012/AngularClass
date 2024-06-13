@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CounterComponent } from "./counter/counter.component";
 import { DirectivePlaygroundComponent } from './directive-playground/directive-playground.component';
 import { CounerWithInputComponent } from "./couner-with-input/couner-with-input.component";
@@ -10,13 +10,14 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { FormComponent } from './form/form.component';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent, HeroesComponent, PostComponent, PostListComponent, AddPostComponent, FormComponent]
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, CounterComponent, DirectivePlaygroundComponent, CounerWithInputComponent, UserListComponent, TodoListComponent, HeroesComponent, PostComponent, PostListComponent, AddPostComponent, FormComponent, HomeComponent]
 })
 export class AppComponent {
   title = 'myTestApp';

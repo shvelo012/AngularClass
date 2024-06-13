@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 export interface Post {
   id: number;
@@ -12,6 +13,7 @@ export interface Post {
 
 
 export class BlogServiceService {
+  postListchanged = new Subject<void>();
   private posts: Post[] = [];
 
   constructor() { }
@@ -23,10 +25,12 @@ export class BlogServiceService {
   };
 
   addpost(post: Post) {
+    console.log(post);
     this.posts.push(post);
   };
 
   removePost(id: number) {
+    console.log(id);
     this.posts = this.posts.filter(post => post.id !== id);
   };
 }
